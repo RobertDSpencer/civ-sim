@@ -12,4 +12,10 @@ class World:
                 worldbox[Y].append(Biome())  # inserts an empty biome
         self.landmass = worldbox
     
-        
+    def __str__(self) -> str:
+        output = ""
+        for Y in range(len(self.landmass)):
+            for X in range(len(self.landmass[Y])):
+                output += str(self.landmass[Y][X])
+            output += "\n"
+        return output
