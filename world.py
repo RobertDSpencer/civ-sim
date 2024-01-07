@@ -10,5 +10,6 @@ class World:
             worldbox.append([])  # adds an empty box into the worldbox to fill with biomes
             for X in range(landX):
                 worldbox[Y].append(Biome())  # inserts an empty biome
-      
+        self.landmass = worldbox
+    
         
