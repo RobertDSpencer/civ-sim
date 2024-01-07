@@ -5,3 +5,6 @@ class Biome:
             self.symbol = "X"
         else:
             self.symbol = ""
+    
+    def __str__(self) -> str:
+        return self.symbol
