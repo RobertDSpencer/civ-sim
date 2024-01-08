@@ -14,6 +14,8 @@ class World:
     
     def __str__(self) -> str:
         output = ""
+        output += self.name
+        output += "\n"
         for Y in range(len(self.landmass)):
             for X in range(len(self.landmass[Y])):
                 output += str(self.landmass[Y][X])
